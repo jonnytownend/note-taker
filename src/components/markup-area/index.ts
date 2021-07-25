@@ -1,0 +1,1 @@
+export { MarkupArea } from './markup-area'

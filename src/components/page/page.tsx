@@ -3,6 +3,7 @@ import { PageComponent } from './types'
 import { Container, Content, Title, TextareaContainer, Textarea, CommandMenuContainer } from './styles'
 import { COMMAND_MENU_CHAR } from '../../utils/constants'
 import { CommandMenu } from '../command-menu'
+import { MarkupArea } from '../markup-area'
 import { getTextWidth } from '../../utils/dom-calculations'
 
 export const Page: PageComponent = ({
@@ -50,11 +51,12 @@ export const Page: PageComponent = ({
               <CommandMenu filter={command} />
             </CommandMenuContainer>
           )}
-          <Textarea
+          {/* <Textarea
             value={text}
             placeholder="Start typing to add content"
             onChange={handleTextChange}
-          />
+          /> */}
+          <MarkupArea />
         </TextareaContainer>
       </Content>
     </Container>
